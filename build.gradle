@@ -46,6 +46,3 @@ war {
     baseName = project.ext.artifactId
 }
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '6.2.2'
-}
