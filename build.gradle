@@ -40,14 +40,6 @@ checkstyleTest {
     excludes = ['**/*']
 }
 
-findbugsMain {
-    ignoreFailures = true
-}
-
-findbugsTest {
-    ignoreFailures = true
-}
-
 test {
     ignoreFailures = true
 }
