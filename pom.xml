@@ -67,8 +67,9 @@
     <jacoco-maven.version>0.7.9</jacoco-maven.version>
     <jacoco.include.package>**/*</jacoco.include.package>
   </properties>
-  
+
   <build>
+    <defaultGoal>install</defaultGoal>
     <plugins>
       <!-- Build Configuration -->
       <plugin>
@@ -89,6 +90,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
         <version>${maven-war.version}</version>
+        <defaultGoal>install</defaultGoal>
         <configuration>
           <warName>${project.artifactId}</warName>
           <webXml>src/main/webapp/WEB-INF/web.xml</webXml>
@@ -111,7 +113,6 @@
             </configuration>
             <goals>
               <goal>check</goal>
-              <goal>install</goal>
             </goals>
           </execution>
         </executions>
