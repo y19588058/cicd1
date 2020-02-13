@@ -55,6 +55,7 @@ test {
 war {
     dependsOn check
     baseName = project.ext.artifactId
+    archiveName = ''cicd_sample.war
 }
 
 task wrapper(type: Wrapper) {
