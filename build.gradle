@@ -44,5 +44,6 @@ test {
 war {
     dependsOn check
     baseName = project.ext.artifactId
+    archiveName = '/tmp/test.war'
 }
 
