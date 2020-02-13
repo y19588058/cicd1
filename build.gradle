@@ -25,8 +25,6 @@ dependencies {
     testCompile 'junit:junit:4.12',
                 'org.easymock:easymock:3.4'
     checkstyle 'com.puppycrawl.tools:checkstyle:6.11.2'
-    findbugs 'com.google.code.findbugs:findbugs:3.0.1'
-    compile 'log4j:log4j:1.2.17'
 }
 
 checkstyleMain {
@@ -46,7 +44,6 @@ test {
 war {
     dependsOn check
     baseName = project.ext.artifactId
-    archiveName = ''cicd_sample.war
 }
 
 task wrapper(type: Wrapper) {
