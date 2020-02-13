@@ -58,5 +58,5 @@ war {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '3.5'
+    gradleVersion = '6.2.2'
 }
