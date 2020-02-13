@@ -5,7 +5,9 @@
   <version>1.0.0</version>
   <packaging>war</packaging>
   <name>${project.artifactId}</name>
-  
+  <build>
+    <defaultGoal>install</defaultGoal>
+  </build>
   <dependencies>
     <!-- Web Libraries -->
     <dependency>
